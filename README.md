@@ -12,7 +12,7 @@ $ dotnet run
 
 Some useful commands (requires curl & jq) :
 ```sh
-$  curl --cookie "session-id=ffc12caf-0d3d-42aa-b7c9-991e21020c9e" http://localhost:5000/api/Metadata/ | jq
-$  curl --cookie "session-id=ffc12caf-0d3d-42aa-b7c9-991e21020c9e" http://localhost:5000/api/Metadata/206211246 | jq
+$  curl --cookie "session-id={session-id}" http://localhost:5000/api/Metadata/ | jq
+$  curl --cookie "session-id={session-id}" http://localhost:5000/api/Metadata/206211246 | jq
 ```
 
