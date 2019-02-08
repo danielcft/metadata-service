@@ -12,7 +12,6 @@ curl -v --cookie "session-id=changeMe" -X POST http://localhost:5000/api/incomin
 
 5 - Video Ready event
 curl -v --cookie "session-id=changeMe" -X PUT http://localhost:5000/api/incoming/Video/1 -d @VideoReadyEvent.json --header "Content-Type: application/json" | jq
-its not putting the state to Available!
 
 __________________
 
