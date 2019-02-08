@@ -1,0 +1,11 @@
+{
+  "Id": 1,
+  "Title": "SW stuff",
+  "Description": "Sw stuff description",
+  "ThemeId": 1,
+  "VideoInfo" : {
+	"Id": 1,
+	"Url": null,
+	"State": 1
+  }
+}
