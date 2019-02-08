@@ -24,6 +24,7 @@ namespace MetadataService.Services.Implementations
         {
           return _cmsContentRepository
             .List()
+            .Where(cmsContent => cmsContent?.VideoInfo?.State == VideoInfo.VideoState.Available)
             .Select(cmsContent => cmsContent.Id)
             .ToList();
         }

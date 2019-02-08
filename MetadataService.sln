@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetadataService", "MetadataService\MetadataService.csproj", "{EB833DE7-3435-4402-B8D6-D3C1765B9054}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simulator", "Simulator\Simulator.csproj", "{6D1C809F-DF89-43AF-947C-11EEF1BAB32A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EB833DE7-3435-4402-B8D6-D3C1765B9054}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB833DE7-3435-4402-B8D6-D3C1765B9054}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB833DE7-3435-4402-B8D6-D3C1765B9054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1C809F-DF89-43AF-947C-11EEF1BAB32A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1C809F-DF89-43AF-947C-11EEF1BAB32A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1C809F-DF89-43AF-947C-11EEF1BAB32A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1C809F-DF89-43AF-947C-11EEF1BAB32A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
