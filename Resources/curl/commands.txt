@@ -2,18 +2,28 @@
 curl -v http://localhost:5000/api/Metadata/ | jq
 
 2 - Get /Metadata with session cookie 
-curl -v --cookie "session-id=c1e6f970-6644-4fea-94cd-0d3ab726145c" http://localhost:5000/api/Metadata/ | jq
+curl -v --cookie "session-id=changeMe" http://localhost:5000/api/Metadata/ | jq
 
 3 - Create Theme event
-curl -v --cookie "session-id=c1e6f970-6644-4fea-94cd-0d3ab726145c" -X POST http://localhost:5000/api/incoming/Theme -d @Theme.json --header "Content-Type: application/json" | jq
+curl -v --cookie "session-id=changeMe" -X POST http://localhost:5000/api/incoming/Theme -d @Theme.json --header "Content-Type: application/json" | jq
 
 4 - Create CmsContent event 
-curl -v --cookie "session-id=c1e6f970-6644-4fea-94cd-0d3ab726145c" -X POST http://localhost:5000/api/incoming/CmsContent -d @CmsContent.json --header "Content-Type: application/json" | jq
+curl -v --cookie "session-id=changeMe" -X POST http://localhost:5000/api/incoming/CmsContent -d @CmsContent.json --header "Content-Type: application/json" | jq
 
 5 - Video Ready event
-curl -v --cookie "session-id=c1e6f970-6644-4fea-94cd-0d3ab726145c" -X PUT http://localhost:5000/api/incoming/Video/1 -d @VideoReadyEvent.json --header "Content-Type: application/json" | jq
+curl -v --cookie "session-id=changeMe" -X PUT http://localhost:5000/api/incoming/Video/1 -d @VideoReadyEvent.json --header "Content-Type: application/json" | jq
+its not putting the state to Available!
+
+__________________
 
 
+ 6 - Get /Metadata with session cookie 
+curl -v --cookie "session-id=changeMe" http://localhost:5000/api/Metadata/ | jq
 
+
+ 7 - Get /Metadata with session cookie 
+curl -v --cookie "session-id=changeMe" http://localhost:5000/api/Metadata/1 | jq
+
+ 
 
 

@@ -22,11 +22,10 @@ namespace MetadataService.Services.Implementations
 
         public List<int> GetAll()
         {
-          return _cmsContentRepository
-            .List()
-            .Where(cmsContent => cmsContent?.VideoInfo?.State == VideoInfo.VideoState.Available)
-            .Select(cmsContent => cmsContent.Id)
-            .ToList();
+            var result =  _cmsContentRepository
+              .List(c=> c.VideoInfo!=null && c.VideoInfo.State== VideoInfo.VideoState.Available, c=> c.VideoInfo)
+              .ToList();
+            return result.Select(cmsContent => cmsContent.Id).ToList();
         }
     }
 }
