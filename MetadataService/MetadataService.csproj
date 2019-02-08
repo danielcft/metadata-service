@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <UserSecretsId>c7084c01-30a8-45f3-a88e-5a2b9186f285</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="POCO\**" />
+    <Compile Remove="Tests\**" />
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="POCO\**" />
+    <Content Remove="Tests\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="POCO\**" />
+    <EmbeddedResource Remove="Tests\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="POCO\**" />
+    <None Remove="Tests\**" />
+    <None Remove="wwwroot\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.0.2105168" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
